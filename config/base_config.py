@@ -10,8 +10,8 @@
 
 
 # 基础配置
-PLATFORM = "xhs"
-KEYWORDS = "编程副业,编程兼职"  # 关键词搜索配置，以英文逗号分隔
+PLATFORM = "dy"
+KEYWORDS = "91811174783"  # 关键词搜索配置，以英文逗号分隔
 LOGIN_TYPE = "qrcode"  # qrcode or phone or cookie
 COOKIES = ""
 # 具体值参见media_platform.xxx.field下的枚举值，暂时只支持小红书
@@ -19,7 +19,7 @@ SORT_TYPE = "popularity_descending"
 # 具体值参见media_platform.xxx.field下的枚举值，暂时只支持抖音
 PUBLISH_TIME_TYPE = 0
 CRAWLER_TYPE = (
-    "search"  # 爬取类型，search(关键词搜索) | detail(帖子详情)| creator(创作者主页数据)
+    "creator"  # 爬取类型，search(关键词搜索) | detail(帖子详情)| creator(创作者主页数据)
 )
 # 自定义User Agent（暂时仅对XHS有效）
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
@@ -72,7 +72,7 @@ ALL_DAY = True
 MAX_CONCURRENCY_NUM = 1
 
 # 是否开启爬图片模式, 默认不开启爬图片
-ENABLE_GET_IMAGES = False
+ENABLE_GET_IMAGES = True
 
 # 是否开启爬评论模式, 默认开启爬评论
 ENABLE_GET_COMMENTS = True
@@ -99,8 +99,8 @@ XHS_SPECIFIED_NOTE_URL_LIST = [
 
 # 指定抖音需要爬取的ID列表
 DY_SPECIFIED_ID_LIST = [
-    "7280854932641664319",
-    "7202432992642387233",
+    "91811174783",
+    # "7202432992642387233",
     # ........................
 ]
 
@@ -149,7 +149,8 @@ XHS_CREATOR_ID_LIST = [
 
 # 指定Dy创作者ID列表(sec_id)
 DY_CREATOR_ID_LIST = [
-    "MS4wLjABAAAATJPY7LAlaa5X-c8uNdWkvz0jUGgpw4eeXIwu_8BhvqE",
+    "MS4wLjABAAAAT5XoSO0ovEzX1ib9xbgfxMucYkAhdjgY4X0HWHYnRx4",
+    # "MS4wLjABAAAATJPY7LAlaa5X-c8uNdWkvz0jUGgpw4eeXIwu_8BhvqE",
     # ........................
 ]
 
